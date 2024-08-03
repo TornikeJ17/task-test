@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    font-family: "Lato";
+    color: #ffffff;
+}
+.Container {
+    background: linear-gradient(196.2deg, #0d1e48 0%, #304571 100%);
+    width: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+}
+.FirstBlock {
+    background-image: url("./components/Models/images/1.jpeg");
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    position: relative;
+}
+.SecondBlock {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.InformationBlock {
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    justify-content: center;
+    margin: 0 auto;
+    width: 683px;
+    gap: 10px;
+}
+.Title {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 72px;
+    color: #ffffff;
+    span {
+        color: #ff70d9;
+    }
+}
+.subTitle {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 800;
+    span {
+        color: #ebff00;
+    }
+}
+.infoBtn {
+    width: 191px;
+    height: 54px;
+    border: none;
+    background-color: #ebff00;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 100px;
+    margin-top: 10px;
+    outline: none;
+    &:hover {
+        background-color: #ebff0099;
+    }
+}
+.CardContainer {
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+.CardContainer .Card:first-child,
+.CardContainer .Card:last-child {
+    grid-column: 1 / -1;
+}
+.CardTitle {
+    width: 285px;
+    font-size: 46px;
+    font-weight: 800;
+    color: #ffffff;
+}
+.CardSubTitle {
+    font-weight: 800;
+    font-size: 24px;
+}
+.Card {
+    display: flex;
+    flex-flow: column;
+    gap: 24px;
+    height: 350px;
+    grid-column: span 2;
+    border-radius: 10px;
+    background-size: cover;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(15, 20, 32, 0.79) 100%
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 24px;
+}
+
+.Offers {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+    padding: 60px 60px;
+}
+
+/* Tablet 768px */
+@media screen and (max-width: 1247px) {
+    .Offers {
+        font-size: 24px;
+        padding: 40px 0px 0px 30px;
+    }
+    .CardContainer {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 24px;
+        gap: 20px;
+    }
+    .Card {
+        grid-column: auto !important;
+    }
+
+    .InformationBlock {
+        width: 411px;
+        position: absolute;
+        bottom: 80px;
+        left: 30px;
+        .Title {
+            font-size: 48px;
+        }
+        .subTitle {
+            font-size: 22px;
+        }
+    }
+    .FirstBlock {
+        overflow: hidden;
+    }
+    .SecondBlock {
+        position: absolute;
+        top: 50px;
+        right: -110px;
+    }
+    .Card {
+        height: 339px;
+        gap: 20px;
+        justify-content: end;
+    }
+    .CardTitle {
+        font-size: 40px;
+    }
+    .CardSubTitle {
+        font-size: 16px;
+    }
+}
+
+/* Mobile 360px */
+@media screen and (max-width: 767px) {
+    .Offers {
+        font-size: 18px;
+        padding: 40px 20px 20px 20px;
+    }
+    .CardContainer {
+        padding: 0 20px;
+        grid-template-columns: 1fr;
+    }
+    .Card {
+        width: 272px;
+        height: 319px;
+        justify-content: end;
+        gap: 10px;
+    }
+    .InformationBlock {
+        width: 300px;
+        position: absolute;
+        align-items: center;
+        bottom: 80px;
+        left: 30px;
+        .Title {
+            font-size: 36px;
+        }
+        .subTitle {
+            font-size: 16px;
+        }
+        .infoBtn {
+            height: 33px;
+            font-size: 16px;
+        }
+    }
+    .SecondBlock {
+        position: absolute;
+        top: -125px;
+        left: -60px;
+    }
+    .CardTitle {
+        font-size: 40px;
+    }
+    .CardSubTitle {
+        font-size: 16px;
+    }
+}

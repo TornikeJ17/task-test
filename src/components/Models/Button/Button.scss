@@ -1,0 +1,23 @@
+.Btn {
+    width: 191px;
+    height: 54px;
+    color: #ebff00;
+    border: 2px solid #ebff00;
+    background-color: transparent;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 100px;
+    outline: none;
+    &:hover {
+        border: 3px solid #ebff0099;
+        color: #ebff0099;
+    }
+}
+@media screen and (max-width: 1247px) {
+    .Btn {
+        width: 161px;
+        height: 33px;
+        font-size: 16px;
+    }
+}

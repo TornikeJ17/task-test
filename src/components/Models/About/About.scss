@@ -1,0 +1,53 @@
+.AboutContainer {
+    display: grid;
+    gap: 20px;
+    padding: 60px;
+}
+.AboutTitle {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+}
+.AboutText {
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    opacity: 60%;
+}
+.ReadMore {
+    font-weight: 800;
+    font-size: 20px;
+    color: #ebff00;
+    &:hover {
+        color: #ebff0099;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 767px) {
+    .AboutContainer {
+        padding: 20px;
+    }
+    .AboutTitle {
+        font-size: 18px;
+    }
+    .AboutText {
+        font-size: 14px;
+    }
+    .ReadMore {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1247px) {
+    .AboutContainer {
+        padding: 30px;
+    }
+    .AboutTitle {
+        font-size: 24px;
+    }
+    .AboutText {
+        font-size: 16px;
+    }
+    .ReadMore {
+        font-size: 16px;
+    }
+}
