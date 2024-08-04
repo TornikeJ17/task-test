@@ -130,8 +130,22 @@ const svg = [
     },
     {
         id: 4,
-        name: "Planet",
-        icon: "",
+        name: "close-Icon",
+        icon: (
+            <svg
+                width="32"
+                height="38"
+                viewBox="0 0 25 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    stroke="#fff"
+                    stroke-width="2"
+                    d="m1.406 18.196 23-17m.023 16.625-23-16"
+                />
+            </svg>
+        ),
     },
 ];
 export { svg };
